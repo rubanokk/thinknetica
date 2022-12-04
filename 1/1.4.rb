@@ -10,7 +10,7 @@ c = gets.chomp.to_i
 d = b^2-4*a*c
 result = ""
 
-if (d > 0) 
+if d > 0 
   x1 = (-b + Math.sqrt(d)) / (2 * a)
   x2 = (-b - Math.sqrt(d)) / (2 * a)
   result = "Два корня, x1 = #{x1}, x2 = #{x2}"

@@ -7,17 +7,17 @@ b = gets.chomp.to_i
 puts "Третья сторона: "
 c = gets.chomp.to_i
 
-if (a.zero? || b.zero? || c.zero?) 
+if a.zero? || b.zero? || c.zero?
   puts "Введите все данные"
   return
 end
 
-if (a == b && a == c) 
+if a == b && a == c
   p "Треугольник равнобедренный и равносторонний"
   return
 end
 
-if (a == b || a == c || b == c) 
+if a == b || a == c || b == c 
   p "Треугольник равнобедренный"
   return
 end
