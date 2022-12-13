@@ -17,12 +17,10 @@ is_leap_year = if (year % 4).zero?
 
 months[1] + 1 if is_leap_year
 
-month = months.slice(month)
-
 result = if month == 1
            date
          else
-           month.times { |m| months[m].reduce { |sum, n| sum + n } }
+           date + months[0...(month - 1)].reduce { |sum, n| sum + n }
          end
 
 p result
